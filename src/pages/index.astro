@@ -5,8 +5,37 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Home" description="Home page" showMarquee={true}>
-    <Section title="Mreow Mreow Mrrp">
-        <p>Meow meow Mrrrp x2 :3</p>
+    <Section title="Welcome">
+        <p>
+            Hello and welcome to my gay lil website! I will be talking about
+            many many things of various topics such as: Aim theory/Aim training,
+            Urban planning/design, Architecture, Politics and Military bs. If
+            you have any sort of interest in ANY of these topic you should STAY
+            and VIEW MY SITE. (This is a threat :3). This site was made in Astro
+            with the help of <a href="https://equinoxx.dev">Equinoxx</a> :3!
+            Hopefully it will be expanded on in the future because right now
+            like... The gallery and projects pages just don't do anything and
+            might not for awhile who knows?
+        </p>
+    </Section>
+    <Section title="About me!">
+        <p>
+            Mreowdy meow my name is Bebsi! Im a trans-fem furry on the internet
+            :3c. I have a WIDE range of interests from military tactics to urban
+            planning. I also listen to a lot of music and I am the embodiment of
+            "I listen to anything". I peaked at 68,000 songs in my liked
+            playlist on Spotify but sadly had to remove all songs due to my
+            phone being unable to open Spotify TwT. Music is a big part of me
+            and I'm always listening to something whether that's jungle,
+            hyper-pop, punk, metal, rock and even country. I also play video
+            games! (I mean who doesn't). I play multiplayer shooters such as:
+            The Finals, Deadlock, Stalzone and Wardogs. I also play single
+            player games: RimWorld, Project Zomboid, Voices of the Void and the
+            Combat Mission games specifically Black Sea and Shock Force 2. I
+            love aim training in KovaaK's and I am currently grinding viscose
+            benchmark v2. I specialise in tracking but want to branch out to
+            other areas of aim.
+        </p>
     </Section>
     <Section slot="before-footer">
         <div id="badge-box">
@@ -55,5 +84,10 @@ import Layout from "../layouts/Layout.astro";
         gap: var(--section-gap);
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    p {
+        margin: 30px;
+        text-align: justify;
     }
 </style>

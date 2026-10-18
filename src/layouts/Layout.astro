@@ -19,6 +19,12 @@ const { title, description, showMarquee = false } = Astro.props;
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Bebsi's YAPPIN"
+            href={new URL("rss.xml", Astro.site)}
+        />
         <title>{title} | bebsi</title>
         <meta name="description" content={description} />
         <script is:inline define:vars={{ themes, defaultThemeId }}>
